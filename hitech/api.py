@@ -209,3 +209,69 @@ def _cleanup_invalid_tokens(tokens: list[str], response) -> None:
 		frappe.logger().info(
 			f"[FCM] Cleaned up {len(tokens_to_delete)} invalid/expired token(s)."
 		)
+
+
+# ---------------------------------------------------------------------------
+# Public website enquiry method
+# ---------------------------------------------------------------------------
+
+
+@frappe.whitelist(allow_guest=True)
+def create_website_lead(
+	name: str,
+	phone: str,
+	district: str = "",
+	work_type: str = "",
+	message: str = "",
+) -> dict:
+	"""Creates a CRM Lead from public website submissions.
+	Accessible to Guests (public website visitors).
+	Automatically triggers notify_new_lead via CRM Lead -> after_insert.
+	"""
+	if not name or not phone:
+		frappe.throw(_("Name and Phone are required"), frappe.ValidationError)
+
+	name = name.strip()
+	phone = phone.strip()
+	district = district.strip() if district else ""
+	message = message.strip() if message else ""
+
+	# Check for potential duplicates within the last 10 minutes to prevent double-click
+	recent = frappe.db.get_value(
+		"CRM Lead",
+		{
+			"mobile_no": phone,
+			"creation": [">", frappe.utils.add_to_date(frappe.utils.now(), minutes=-10)],
+		},
+		"name",
+	)
+	if recent:
+		return {"status": "ok", "lead": recent, "duplicate": True}
+
+	lead = frappe.get_doc(
+		{
+			"doctype": "CRM Lead",
+			"lead_name": name,
+			"first_name": name,
+			"mobile_no": phone,
+			"custom_district": district,
+			"source": "Website",
+			"status": "New",
+		}
+	)
+	lead.insert(ignore_permissions=True)
+
+	details = []
+	if work_type:
+		details.append(f"<b>Work Required:</b> {work_type}")
+	if district:
+		details.append(f"<b>District:</b> {district}")
+	if message and message != "-":
+		details.append(f"<b>Message:</b> {message}")
+
+	if details:
+		lead.add_comment("Comment", "<br>".join(details))
+
+	frappe.db.commit()
+	frappe.logger().info(f"[Website] New lead created: {lead.name} ({name})")
+	return {"status": "ok", "lead": lead.name}
