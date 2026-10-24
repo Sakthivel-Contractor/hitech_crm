@@ -248,6 +248,22 @@ def create_website_lead(
 	if recent:
 		return {"status": "ok", "lead": recent, "duplicate": True}
 
+	# Normalize work_type to valid options in CRM Lead:
+	# Options: 'New Well', 'Well Deepening', 'Wall Construction', 'Desilting', 'Water Survey'
+	WORK_TYPE_MAP = {
+		'openwell': 'New Well',
+		'deepening': 'Well Deepening',
+		'wall': 'Wall Construction',
+		'cleaning': 'Desilting',
+		'survey': 'Water Survey',
+		'new open well digging': 'New Well',
+		'well deepening': 'Well Deepening',
+		'well wall construction': 'Wall Construction',
+		'old well cleaning & desilting': 'Desilting',
+		'water point survey': 'Water Survey',
+	}
+	clean_work_type = WORK_TYPE_MAP.get(work_type.lower().strip(), work_type if work_type else 'New Well')
+
 	lead = frappe.get_doc(
 		{
 			"doctype": "CRM Lead",
@@ -255,6 +271,7 @@ def create_website_lead(
 			"first_name": name,
 			"mobile_no": phone,
 			"custom_district": district,
+			"custom_work_type": clean_work_type,
 			"source": "Website",
 			"status": "New",
 		}
