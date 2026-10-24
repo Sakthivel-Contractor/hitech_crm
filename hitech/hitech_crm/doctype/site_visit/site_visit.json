@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-10-20 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_section",
+  "lead",
+  "lead_name",
+  "mobile_no",
+  "column_break_lead",
+  "village",
+  "district",
+  "visit_section",
+  "visit_date",
+  "visited_by",
+  "column_break_visit",
+  "status",
+  "well_details_section",
+  "diameter_ft",
+  "expected_depth_ft",
+  "column_break_well",
+  "rock_from_ft",
+  "soil_type",
+  "location_section",
+  "latitude",
+  "longitude",
+  "column_break_location",
+  "map_link",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_section",
+   "fieldtype": "Section Break",
+   "label": "Lead"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead",
+   "options": "CRM Lead",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "lead.lead_name",
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lead",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "lead.custom_village",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead.custom_district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visit_section",
+   "fieldtype": "Section Break",
+   "label": "Visit"
+  },
+  {
+   "default": "now",
+   "fieldname": "visit_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "visited_by",
+   "fieldtype": "Link",
+   "label": "Visited By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_visit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Completed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Planned\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "well_details_section",
+   "fieldtype": "Section Break",
+   "label": "Well details"
+  },
+  {
+   "fieldname": "diameter_ft",
+   "fieldtype": "Int",
+   "label": "Diameter (ft)"
+  },
+  {
+   "fieldname": "expected_depth_ft",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Expected Depth (ft)"
+  },
+  {
+   "fieldname": "column_break_well",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rock_from_ft",
+   "fieldtype": "Int",
+   "label": "Rock Starts At (ft)"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Soil Type",
+   "options": "\nRed Soil\nBlack Soil\nSandy Soil\nRock"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "column_break_location",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "map_link",
+   "fieldtype": "Data",
+   "label": "Google Maps",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-20 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Hitech CRM",
+ "name": "Site Visit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User"
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "Sales User",
+   "write": 1
+  }
+ ],
+ "sort_field": "visit_date",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "lead_name",
+ "track_changes": 1
+}

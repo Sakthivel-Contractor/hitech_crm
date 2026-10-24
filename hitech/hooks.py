@@ -190,6 +190,14 @@ use_json_request_body = True
 # 	}
 # }
 
+doc_events = {
+	"CRM Lead": {
+		# Fires after a new CRM Lead document is saved to the database for the
+		# first time. Sends an FCM push notification to all registered devices.
+		"after_insert": "hitech.api.notify_new_lead",
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 
