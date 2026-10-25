@@ -1,3 +1,4 @@
+import datetime
 # Copyright (c) 2026, Hitech and contributors
 # For license information, please see license.txt
 
@@ -159,9 +160,14 @@ def notify_new_lead(doc, method=None) -> None:
 				"lead": doc.name,
 			},
 			android=messaging.AndroidConfig(
+				priority="high",
+				ttl=datetime.timedelta(days=7),
 				notification=messaging.AndroidNotification(
 					channel_id="new_leads",
 					icon="ic_stat_notify",
+					priority="high",
+					default_sound=True,
+					default_vibrate_timings=True,
 				),
 			),
 		)
