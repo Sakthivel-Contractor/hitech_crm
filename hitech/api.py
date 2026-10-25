@@ -42,6 +42,16 @@ def register_device(token: str, platform: str, device_name: str) -> dict:
 	if not user or user == "Guest":
 		frappe.throw(_("Authentication required"), frappe.AuthenticationError)
 
+	token = (token or "").strip()
+	platform = (platform or "android").strip()
+	device_name = (device_name or "Android").strip()
+
+	# Ensure the database column can store long tokens (>140 chars)
+	try:
+		frappe.db.sql("ALTER TABLE `tabHiTech Device Token` MODIFY COLUMN `token` VARCHAR(500)")
+	except Exception:
+		pass
+
 	# Upsert: if this exact token already exists for any user, update it;
 	# otherwise create a new record.
 	existing = frappe.db.get_value(
@@ -53,6 +63,7 @@ def register_device(token: str, platform: str, device_name: str) -> dict:
 		doc.user = user
 		doc.platform = platform
 		doc.device_name = device_name
+		doc.flags.ignore_validate = True
 		doc.save(ignore_permissions=True)
 		frappe.db.commit()
 		frappe.logger().info(f"[FCM] Updated device token for user={user} name={doc.name}")
@@ -66,6 +77,7 @@ def register_device(token: str, platform: str, device_name: str) -> dict:
 				"device_name": device_name,
 			}
 		)
+		doc.flags.ignore_validate = True
 		doc.insert(ignore_permissions=True)
 		frappe.db.commit()
 		frappe.logger().info(f"[FCM] Registered new device token for user={user} name={doc.name}")

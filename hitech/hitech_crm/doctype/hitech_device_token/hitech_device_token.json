@@ -27,7 +27,7 @@
    "in_list_view": 1,
    "label": "FCM Token",
    "reqd": 1,
-   "unique": 1
+   "length": 500
   },
   {
    "fieldname": "platform",
