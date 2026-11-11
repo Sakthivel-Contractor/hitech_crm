@@ -73,14 +73,8 @@ use_json_request_body = True
 # application home page (will override Website Settings)
 home_page = "index"
 
-# Public Vue website hosted from hitech/www; CRM remains available at /desk.
-website_redirects = [
-	{"source": "/crm", "target": "/desk"},
-	{"source": "/crm/", "target": "/desk"},
-]
-
-# Let Frappe's regular page renderers claim real website pages first, then use
-# the Vue entry point for unmatched client-side routes.
+# Let Frappe's regular page renderers claim real website pages (including CRM)
+# first, then use the Vue entry point for unmatched client-side routes.
 page_renderer = ["hitech.vue_fallback.VueFallbackRenderer"]
 
 # website user home page (by Role)

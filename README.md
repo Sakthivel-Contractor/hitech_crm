@@ -30,7 +30,7 @@ git push upstream main
 
 The package command expects the Vue and Frappe repositories to be siblings; pass the path to this
 app's `hitech` directory if they are elsewhere. The Frappe homepage serves the Vue site, `/crm`
-redirects to `/desk`, and unmatched public paths fall back to the Vue app. Website lead submissions
+serves Frappe CRM, and unmatched public paths fall back to the Vue app. Website lead submissions
 use the same-origin Frappe API and session CSRF token.
 
 ### Contributing
