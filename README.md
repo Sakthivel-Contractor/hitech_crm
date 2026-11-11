@@ -8,9 +8,30 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
+bench get-app $URL_OF_THIS_REPO --branch main
 bench install-app hitech
 ```
+
+### Public Vue website
+
+The public website is built from the sibling `hi_tech_open_well_contractor` repository and packaged
+into this app's `hitech/public/vue` and `hitech/www` directories. Build it before deploying an app
+change so Frappe Cloud receives the generated website files with the app commit:
+
+```bash
+cd apps/hi_tech_open_well_contractor
+npm ci
+npm run build:frappe -- ../hitech_crm/hitech
+cd ../hitech_crm
+git add hitech README.md
+git commit -m "Serve public Vue site from Frappe"
+git push upstream main
+```
+
+The package command expects the Vue and Frappe repositories to be siblings; pass the path to this
+app's `hitech` directory if they are elsewhere. The Frappe homepage serves the Vue site, `/crm`
+redirects to `/desk`, and unmatched public paths fall back to the Vue app. Website lead submissions
+use the same-origin Frappe API and session CSRF token.
 
 ### Contributing
 

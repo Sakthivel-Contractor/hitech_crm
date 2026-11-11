@@ -235,6 +235,12 @@ def _cleanup_invalid_tokens(tokens: list[str], response) -> None:
 
 
 @frappe.whitelist(allow_guest=True)
+def get_website_csrf_token() -> str:
+	"""Return the session CSRF token for same-origin public website requests."""
+	return frappe.sessions.get_csrf_token()
+
+
+@frappe.whitelist(allow_guest=True)
 def create_website_lead(
 	name: str,
 	phone: str,

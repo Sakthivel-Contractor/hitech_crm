@@ -1,0 +1,92 @@
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/contact
+  Cache-Control: public, max-age=0, must-revalidate
+/contact/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/salem
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/salem/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/namakkal
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/namakkal/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/karur
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/karur/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/dindigul
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/dindigul/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/madurai
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/madurai/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tirunelveli
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tirunelveli/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/virudhunagar
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/virudhunagar/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/rajapalayam
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/rajapalayam/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tenkasi
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tenkasi/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/chennai
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/chennai/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/dharmapuri
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/dharmapuri/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/krishnagiri
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/krishnagiri/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/theni
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/theni/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/sivaganga
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/sivaganga/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/thoothukudi
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/thoothukudi/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/erode
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/erode/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/coimbatore
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/coimbatore/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/pollachi
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/pollachi/
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tiruppur
+  Cache-Control: public, max-age=0, must-revalidate
+/tamil-nadu/tiruppur/
+  Cache-Control: public, max-age=0, must-revalidate
+/karnataka/bengaluru
+  Cache-Control: public, max-age=0, must-revalidate
+/karnataka/bengaluru/
+  Cache-Control: public, max-age=0, must-revalidate
+/privacy
+  Cache-Control: public, max-age=0, must-revalidate
+/privacy/
+  Cache-Control: public, max-age=0, must-revalidate
+/404.html
+  Cache-Control: public, max-age=0, must-revalidate
