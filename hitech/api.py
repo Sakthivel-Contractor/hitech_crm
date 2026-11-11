@@ -193,30 +193,15 @@ def notify_new_lead(doc, method=None) -> None:
 
 def _cleanup_invalid_tokens(tokens: list[str], response) -> None:
 	"""Delete tokens whose FCM registration is expired or invalid."""
-	from firebase_admin.exceptions import FirebaseError
-
-	invalid_error_codes = {
-		"registration-token-not-registered",
-		"invalid-registration-token",
-		"invalid-argument",
-	}
+	from firebase_admin import messaging
 
 	tokens_to_delete: list[str] = []
 
 	for idx, send_response in enumerate(response.responses):
-		if not send_response.success and send_response.exception:
-			exc: FirebaseError = send_response.exception
-			# firebase-admin surfaces the FCM error code via the http_response
-			# attribute or directly on the exception's error_code.
-			error_code = getattr(exc, "code", None) or ""
-			# Normalise: Firebase may return camelCase or kebab-case strings.
-			error_code_normalised = (
-				error_code.lower().replace("_", "-")
-				if isinstance(error_code, str)
-				else ""
-			)
-			if error_code_normalised in invalid_error_codes:
-				tokens_to_delete.append(tokens[idx])
+		if not send_response.success and isinstance(
+			send_response.exception, messaging.UnregisteredError
+		):
+			tokens_to_delete.append(tokens[idx])
 
 	if tokens_to_delete:
 		for token in tokens_to_delete:

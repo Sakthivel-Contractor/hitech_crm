@@ -1,8 +1,7 @@
 {
  "actions": [],
- "allow_rename": 0,
  "autoname": "hash",
- "creation": "2026-10-24 12:00:00.000000",
+ "creation": "2026-10-24 12:00:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -19,6 +18,7 @@
    "in_standard_filter": 1,
    "label": "User",
    "options": "User",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -26,25 +26,28 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "FCM Token",
-   "reqd": 1,
-   "length": 500
+   "length": 500,
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "platform",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Platform"
+   "label": "Platform",
+   "read_only": 1
   },
   {
    "fieldname": "device_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Device Name"
+   "label": "Device Name",
+   "read_only": 1
   }
  ],
- "index_web_pages_for_search": 0,
+ "link_display_mode": "Search",
  "links": [],
- "modified": "2026-10-24 12:00:00.000000",
+ "modified": "2026-11-11 22:53:19.334213",
  "modified_by": "Administrator",
  "module": "Hitech CRM",
  "name": "HiTech Device Token",
@@ -53,18 +56,15 @@
   {
    "create": 1,
    "delete": 1,
-   "email": 0,
    "export": 1,
-   "print": 0,
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 0,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 0
+ "states": []
 }
