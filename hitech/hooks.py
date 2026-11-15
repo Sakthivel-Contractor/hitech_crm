@@ -73,9 +73,8 @@ use_json_request_body = True
 # application home page (will override Website Settings)
 home_page = "index"
 
-# Let Frappe's regular page renderers claim real website pages (including CRM)
-# first, then use the Vue entry point for unmatched client-side routes.
-page_renderer = ["hitech.vue_fallback.VueFallbackRenderer"]
+# The Vue site's public routes are pre-rendered under www/. Let Frappe return
+# its normal 404 for unknown paths instead of serving the homepage as HTTP 200.
 
 # website user home page (by Role)
 # role_home_page = {
