@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hitechopenwell.com/sitemap.xml
+Sitemap: https://hitechopen-wellcontractor.in/sitemap.xml
