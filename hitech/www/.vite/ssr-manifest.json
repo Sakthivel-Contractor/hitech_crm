@@ -63,10 +63,10 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/hitech/vue/assets/i18n-BNunUjip.js"
+    "/assets/hitech/vue/assets/i18n-CxUlltT-.js"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/hitech/vue/assets/i18n-BNunUjip.js"
+    "/assets/hitech/vue/assets/i18n-CxUlltT-.js"
   ],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -78,7 +78,7 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/hitech/vue/assets/i18n-BNunUjip.js"
+    "/assets/hitech/vue/assets/i18n-CxUlltT-.js"
   ],
   "node_modules/hookable/dist/index.mjs": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -243,12 +243,12 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/components/AreaList.vue": [
-    "/assets/hitech/vue/assets/AreaList-BTMBhJlg.js",
-    "/assets/hitech/vue/assets/AreaList-DkkguosJ.css"
+    "/assets/hitech/vue/assets/AreaList-PIOij1re.js",
+    "/assets/hitech/vue/assets/AreaList-BRbqiaOn.css"
   ],
   "src/components/AreaList.vue?vue&type=style&index=0&scoped=2339262a&lang.css": [
-    "/assets/hitech/vue/assets/AreaList-BTMBhJlg.js",
-    "/assets/hitech/vue/assets/AreaList-DkkguosJ.css"
+    "/assets/hitech/vue/assets/AreaList-PIOij1re.js",
+    "/assets/hitech/vue/assets/AreaList-BRbqiaOn.css"
   ],
   "src/components/CtaBand.vue": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -269,27 +269,35 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/components/DistrictSelect.vue": [
-    "/assets/hitech/vue/assets/EnquiryForm-6dH3vKzw.js",
-    "/assets/hitech/vue/assets/EnquiryForm-DTvSXiYW.css"
+    "/assets/hitech/vue/assets/EnquiryForm-BoCv-pXG.js",
+    "/assets/hitech/vue/assets/EnquiryForm-eMeDJy16.css"
   ],
-  "src/components/DistrictSelect.vue?vue&type=style&index=0&scoped=a6b95fc0&lang.css": [
-    "/assets/hitech/vue/assets/EnquiryForm-6dH3vKzw.js",
-    "/assets/hitech/vue/assets/EnquiryForm-DTvSXiYW.css"
+  "src/components/DistrictSelect.vue?vue&type=style&index=0&scoped=9847c660&lang.css": [
+    "/assets/hitech/vue/assets/EnquiryForm-BoCv-pXG.js",
+    "/assets/hitech/vue/assets/EnquiryForm-eMeDJy16.css"
   ],
   "src/components/EnquiryForm.vue": [
-    "/assets/hitech/vue/assets/EnquiryForm-6dH3vKzw.js",
-    "/assets/hitech/vue/assets/EnquiryForm-DTvSXiYW.css"
+    "/assets/hitech/vue/assets/EnquiryForm-BoCv-pXG.js",
+    "/assets/hitech/vue/assets/EnquiryForm-eMeDJy16.css"
   ],
-  "src/components/EnquiryForm.vue?vue&type=style&index=0&scoped=9dc18fe9&lang.css": [
-    "/assets/hitech/vue/assets/EnquiryForm-6dH3vKzw.js",
-    "/assets/hitech/vue/assets/EnquiryForm-DTvSXiYW.css"
+  "src/components/EnquiryForm.vue?vue&type=style&index=0&scoped=9530af3f&lang.css": [
+    "/assets/hitech/vue/assets/EnquiryForm-BoCv-pXG.js",
+    "/assets/hitech/vue/assets/EnquiryForm-eMeDJy16.css"
+  ],
+  "src/components/FaqList.vue": [
+    "/assets/hitech/vue/assets/FaqList-Cw5Qxi9V.js",
+    "/assets/hitech/vue/assets/FaqList-CT4W51Sc.css"
+  ],
+  "src/components/FaqList.vue?vue&type=style&index=0&scoped=fb699f61&lang.css": [
+    "/assets/hitech/vue/assets/FaqList-Cw5Qxi9V.js",
+    "/assets/hitech/vue/assets/FaqList-CT4W51Sc.css"
   ],
   "src/components/GalleryLightbox.vue": [
-    "/assets/hitech/vue/assets/GalleryLightbox-CSm9lWJ-.js",
+    "/assets/hitech/vue/assets/GalleryLightbox-LIBcnY6L.js",
     "/assets/hitech/vue/assets/GalleryLightbox-BERz9aPA.css"
   ],
   "src/components/GalleryLightbox.vue?vue&type=style&index=0&scoped=74ebd651&lang.css": [
-    "/assets/hitech/vue/assets/GalleryLightbox-CSm9lWJ-.js",
+    "/assets/hitech/vue/assets/GalleryLightbox-LIBcnY6L.js",
     "/assets/hitech/vue/assets/GalleryLightbox-BERz9aPA.css"
   ],
   "src/components/MobileBar.vue": [
@@ -301,7 +309,7 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
-  "src/components/MobileBar.vue?vue&type=style&index=0&scoped=68b7d4fa&lang.css": [
+  "src/components/MobileBar.vue?vue&type=style&index=0&scoped=12e9df69&lang.css": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
     "/assets/hitech/vue/assets/hind-madurai-400-tamil-d6m8Wk-E.woff2",
     "/assets/hitech/vue/assets/hind-madurai-600-latin-C-Ru26PC.woff2",
@@ -310,17 +318,25 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
+  "src/components/ProcessSteps.vue": [
+    "/assets/hitech/vue/assets/ProcessSteps-YdiUNAbV.js",
+    "/assets/hitech/vue/assets/ProcessSteps-B-Fp8l8U.css"
+  ],
+  "src/components/ProcessSteps.vue?vue&type=style&index=0&scoped=9f4d805f&lang.css": [
+    "/assets/hitech/vue/assets/ProcessSteps-YdiUNAbV.js",
+    "/assets/hitech/vue/assets/ProcessSteps-B-Fp8l8U.css"
+  ],
   "src/components/ResponsiveImage.vue": [
-    "/assets/hitech/vue/assets/AreaList-BTMBhJlg.js",
-    "/assets/hitech/vue/assets/AreaList-DkkguosJ.css"
+    "/assets/hitech/vue/assets/ServiceCards-fNZpKVDt.js",
+    "/assets/hitech/vue/assets/ServiceCards-ByjRyzCl.css"
   ],
   "src/components/ReviewsSection.vue": [
-    "/assets/hitech/vue/assets/ReviewsSection-DSvq6WMH.js",
-    "/assets/hitech/vue/assets/ReviewsSection-3gYWhFqV.css"
+    "/assets/hitech/vue/assets/ReviewsSection-CHEHGqvf.js",
+    "/assets/hitech/vue/assets/ReviewsSection-O2xyyLRm.css"
   ],
-  "src/components/ReviewsSection.vue?vue&type=style&index=0&scoped=b78c6d51&lang.css": [
-    "/assets/hitech/vue/assets/ReviewsSection-DSvq6WMH.js",
-    "/assets/hitech/vue/assets/ReviewsSection-3gYWhFqV.css"
+  "src/components/ReviewsSection.vue?vue&type=style&index=0&scoped=9f0764fd&lang.css": [
+    "/assets/hitech/vue/assets/ReviewsSection-CHEHGqvf.js",
+    "/assets/hitech/vue/assets/ReviewsSection-O2xyyLRm.css"
   ],
   "src/components/SectionLink.vue": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -332,12 +348,12 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/components/ServiceCards.vue": [
-    "/assets/hitech/vue/assets/AreaList-BTMBhJlg.js",
-    "/assets/hitech/vue/assets/AreaList-DkkguosJ.css"
+    "/assets/hitech/vue/assets/ServiceCards-fNZpKVDt.js",
+    "/assets/hitech/vue/assets/ServiceCards-ByjRyzCl.css"
   ],
-  "src/components/ServiceCards.vue?vue&type=style&index=0&scoped=2af51700&lang.css": [
-    "/assets/hitech/vue/assets/AreaList-BTMBhJlg.js",
-    "/assets/hitech/vue/assets/AreaList-DkkguosJ.css"
+  "src/components/ServiceCards.vue?vue&type=style&index=0&scoped=edad1f4d&lang.css": [
+    "/assets/hitech/vue/assets/ServiceCards-fNZpKVDt.js",
+    "/assets/hitech/vue/assets/ServiceCards-ByjRyzCl.css"
   ],
   "src/components/SiteFooter.vue": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -348,7 +364,7 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
-  "src/components/SiteFooter.vue?vue&type=style&index=0&scoped=2d053d09&lang.css": [
+  "src/components/SiteFooter.vue?vue&type=style&index=0&scoped=5c1ccdc4&lang.css": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
     "/assets/hitech/vue/assets/hind-madurai-400-tamil-d6m8Wk-E.woff2",
     "/assets/hitech/vue/assets/hind-madurai-600-latin-C-Ru26PC.woff2",
@@ -366,7 +382,7 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
-  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=01c2977c&lang.css": [
+  "src/components/SiteHeader.vue?vue&type=style&index=0&scoped=41e4deb7&lang.css": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
     "/assets/hitech/vue/assets/hind-madurai-400-tamil-d6m8Wk-E.woff2",
     "/assets/hitech/vue/assets/hind-madurai-600-latin-C-Ru26PC.woff2",
@@ -376,12 +392,12 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/components/StarRating.vue": [
-    "/assets/hitech/vue/assets/ReviewsSection-DSvq6WMH.js",
-    "/assets/hitech/vue/assets/ReviewsSection-3gYWhFqV.css"
+    "/assets/hitech/vue/assets/ReviewsSection-CHEHGqvf.js",
+    "/assets/hitech/vue/assets/ReviewsSection-O2xyyLRm.css"
   ],
   "src/components/StarRating.vue?vue&type=style&index=0&scoped=7778346a&lang.css": [
-    "/assets/hitech/vue/assets/ReviewsSection-DSvq6WMH.js",
-    "/assets/hitech/vue/assets/ReviewsSection-3gYWhFqV.css"
+    "/assets/hitech/vue/assets/ReviewsSection-CHEHGqvf.js",
+    "/assets/hitech/vue/assets/ReviewsSection-O2xyyLRm.css"
   ],
   "src/components/WhatsAppFloat.vue": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -402,15 +418,15 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/components/WorkGallery.vue": [
-    "/assets/hitech/vue/assets/HomePage-Cb52Jf4x.js",
-    "/assets/hitech/vue/assets/HomePage-BCla_unf.css"
+    "/assets/hitech/vue/assets/HomePage-CuJSSavL.js",
+    "/assets/hitech/vue/assets/HomePage-DqRtsYbw.css"
   ],
   "src/components/WorkGallery.vue?vue&type=style&index=0&scoped=43e635c8&lang.css": [
-    "/assets/hitech/vue/assets/HomePage-Cb52Jf4x.js",
-    "/assets/hitech/vue/assets/HomePage-BCla_unf.css"
+    "/assets/hitech/vue/assets/HomePage-CuJSSavL.js",
+    "/assets/hitech/vue/assets/HomePage-DqRtsYbw.css"
   ],
   "src/composables/usePageMeta.js": [
-    "/assets/hitech/vue/assets/usePageMeta-DGavZ1_U.js"
+    "/assets/hitech/vue/assets/usePageMeta-C-a6bfK4.js"
   ],
   "src/data/areas.js": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -430,6 +446,14 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
+  "src/data/costGuide.js": [
+    "/assets/hitech/vue/assets/CostGuidePage-Bovj6Ph7.js",
+    "/assets/hitech/vue/assets/CostGuidePage-mOOv0TnE.css"
+  ],
+  "src/data/faqs.js": [
+    "/assets/hitech/vue/assets/FaqList-Cw5Qxi9V.js",
+    "/assets/hitech/vue/assets/FaqList-CT4W51Sc.css"
+  ],
   "src/data/photos.js": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
     "/assets/hitech/vue/assets/hind-madurai-400-tamil-d6m8Wk-E.woff2",
@@ -439,13 +463,26 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
+  "src/data/process.js": [
+    "/assets/hitech/vue/assets/ProcessSteps-YdiUNAbV.js",
+    "/assets/hitech/vue/assets/ProcessSteps-B-Fp8l8U.css"
+  ],
   "src/data/reviews.js": [
-    "/assets/hitech/vue/assets/ReviewsSection-DSvq6WMH.js",
-    "/assets/hitech/vue/assets/ReviewsSection-3gYWhFqV.css"
+    "/assets/hitech/vue/assets/ReviewsSection-CHEHGqvf.js",
+    "/assets/hitech/vue/assets/ReviewsSection-O2xyyLRm.css"
+  ],
+  "src/data/services.js": [
+    "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
+    "/assets/hitech/vue/assets/hind-madurai-400-tamil-d6m8Wk-E.woff2",
+    "/assets/hitech/vue/assets/hind-madurai-600-latin-C-Ru26PC.woff2",
+    "/assets/hitech/vue/assets/bricolage-700-latin-C1d3qWSg.woff2",
+    "/assets/hitech/vue/assets/hind-madurai-400-latin-B5rpYIVN.woff2",
+    "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
+    "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/data/tamilnadu_districts.js": [
-    "/assets/hitech/vue/assets/EnquiryForm-6dH3vKzw.js",
-    "/assets/hitech/vue/assets/EnquiryForm-DTvSXiYW.css"
+    "/assets/hitech/vue/assets/EnquiryForm-BoCv-pXG.js",
+    "/assets/hitech/vue/assets/EnquiryForm-eMeDJy16.css"
   ],
   "src/generated/photos.json": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -457,7 +494,7 @@
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
   "src/i18n.js": [
-    "/assets/hitech/vue/assets/i18n-BNunUjip.js"
+    "/assets/hitech/vue/assets/i18n-CxUlltT-.js"
   ],
   "src/main.js": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",
@@ -477,40 +514,64 @@
     "/assets/hitech/vue/assets/hind-madurai-500-tamil-BxVXRDdO.woff2",
     "/assets/hitech/vue/assets/hind-madurai-500-latin-pMwwl_jo.woff2"
   ],
-  "src/pages/ContactPage.vue": [
-    "/assets/hitech/vue/assets/ContactPage-DSmBrRuW.js",
-    "/assets/hitech/vue/assets/ContactPage-BNkDxpVe.css"
+  "src/pages/AboutPage.vue": [
+    "/assets/hitech/vue/assets/AboutPage-BGFzUJkd.js",
+    "/assets/hitech/vue/assets/AboutPage-BjDA8eby.css"
   ],
-  "src/pages/ContactPage.vue?vue&type=style&index=0&scoped=3cc8e47e&lang.css": [
-    "/assets/hitech/vue/assets/ContactPage-DSmBrRuW.js",
-    "/assets/hitech/vue/assets/ContactPage-BNkDxpVe.css"
+  "src/pages/AboutPage.vue?vue&type=style&index=0&scoped=93a7b6ff&lang.css": [
+    "/assets/hitech/vue/assets/AboutPage-BGFzUJkd.js",
+    "/assets/hitech/vue/assets/AboutPage-BjDA8eby.css"
+  ],
+  "src/pages/ContactPage.vue": [
+    "/assets/hitech/vue/assets/ContactPage-BN_vP03A.js",
+    "/assets/hitech/vue/assets/ContactPage-C8EAkt61.css"
+  ],
+  "src/pages/ContactPage.vue?vue&type=style&index=0&scoped=9128d839&lang.css": [
+    "/assets/hitech/vue/assets/ContactPage-BN_vP03A.js",
+    "/assets/hitech/vue/assets/ContactPage-C8EAkt61.css"
+  ],
+  "src/pages/CostGuidePage.vue": [
+    "/assets/hitech/vue/assets/CostGuidePage-Bovj6Ph7.js",
+    "/assets/hitech/vue/assets/CostGuidePage-mOOv0TnE.css"
+  ],
+  "src/pages/CostGuidePage.vue?vue&type=style&index=0&scoped=c58a4c4c&lang.css": [
+    "/assets/hitech/vue/assets/CostGuidePage-Bovj6Ph7.js",
+    "/assets/hitech/vue/assets/CostGuidePage-mOOv0TnE.css"
   ],
   "src/pages/DistrictPage.vue": [
-    "/assets/hitech/vue/assets/DistrictPage-YwUbH4Kz.js",
-    "/assets/hitech/vue/assets/DistrictPage-B2vd5R83.css"
+    "/assets/hitech/vue/assets/DistrictPage-lYeohbmR.js",
+    "/assets/hitech/vue/assets/DistrictPage-DCNV1Giz.css"
   ],
-  "src/pages/DistrictPage.vue?vue&type=style&index=0&scoped=24e6d90a&lang.css": [
-    "/assets/hitech/vue/assets/DistrictPage-YwUbH4Kz.js",
-    "/assets/hitech/vue/assets/DistrictPage-B2vd5R83.css"
+  "src/pages/DistrictPage.vue?vue&type=style&index=0&scoped=50798a99&lang.css": [
+    "/assets/hitech/vue/assets/DistrictPage-lYeohbmR.js",
+    "/assets/hitech/vue/assets/DistrictPage-DCNV1Giz.css"
   ],
   "src/pages/HomePage.vue": [
-    "/assets/hitech/vue/assets/HomePage-Cb52Jf4x.js",
-    "/assets/hitech/vue/assets/HomePage-BCla_unf.css"
+    "/assets/hitech/vue/assets/HomePage-CuJSSavL.js",
+    "/assets/hitech/vue/assets/HomePage-DqRtsYbw.css"
   ],
-  "src/pages/HomePage.vue?vue&type=style&index=0&scoped=ee48085e&lang.css": [
-    "/assets/hitech/vue/assets/HomePage-Cb52Jf4x.js",
-    "/assets/hitech/vue/assets/HomePage-BCla_unf.css"
+  "src/pages/HomePage.vue?vue&type=style&index=0&scoped=a2cf36aa&lang.css": [
+    "/assets/hitech/vue/assets/HomePage-CuJSSavL.js",
+    "/assets/hitech/vue/assets/HomePage-DqRtsYbw.css"
   ],
   "src/pages/NotFound.vue": [
-    "/assets/hitech/vue/assets/NotFound-eMY3nOiF.js"
+    "/assets/hitech/vue/assets/NotFound-CJhSkFTR.js"
   ],
   "src/pages/PrivacyPage.vue": [
-    "/assets/hitech/vue/assets/PrivacyPage-DyGqBOpQ.js",
-    "/assets/hitech/vue/assets/PrivacyPage-CT5SqCh2.css"
+    "/assets/hitech/vue/assets/PrivacyPage-BDGPEJv9.js",
+    "/assets/hitech/vue/assets/PrivacyPage-DQEyc_B-.css"
   ],
-  "src/pages/PrivacyPage.vue?vue&type=style&index=0&scoped=e9e6717d&lang.css": [
-    "/assets/hitech/vue/assets/PrivacyPage-DyGqBOpQ.js",
-    "/assets/hitech/vue/assets/PrivacyPage-CT5SqCh2.css"
+  "src/pages/PrivacyPage.vue?vue&type=style&index=0&scoped=006dc5ce&lang.css": [
+    "/assets/hitech/vue/assets/PrivacyPage-BDGPEJv9.js",
+    "/assets/hitech/vue/assets/PrivacyPage-DQEyc_B-.css"
+  ],
+  "src/pages/ServicePage.vue": [
+    "/assets/hitech/vue/assets/ServicePage-DUmT_rT7.js",
+    "/assets/hitech/vue/assets/ServicePage-D5G80v4f.css"
+  ],
+  "src/pages/ServicePage.vue?vue&type=style&index=0&scoped=9f4cbbf4&lang.css": [
+    "/assets/hitech/vue/assets/ServicePage-DUmT_rT7.js",
+    "/assets/hitech/vue/assets/ServicePage-D5G80v4f.css"
   ],
   "src/routes.js": [
     "/assets/hitech/vue/assets/hind-madurai-600-tamil-CwavP93z.woff2",

@@ -4,6 +4,26 @@
   Cache-Control: public, max-age=0, must-revalidate
 /contact/
   Cache-Control: public, max-age=0, must-revalidate
+/services/open-well-digging
+  Cache-Control: public, max-age=0, must-revalidate
+/services/open-well-digging/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-deepening
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-deepening/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-ring-wall-construction
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-ring-wall-construction/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-desilting
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-desilting/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/water-point-survey
+  Cache-Control: public, max-age=0, must-revalidate
+/services/water-point-survey/
+  Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/salem
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/salem/
@@ -31,10 +51,6 @@
 /tamil-nadu/virudhunagar
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/virudhunagar/
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/rajapalayam
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/rajapalayam/
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tenkasi
   Cache-Control: public, max-age=0, must-revalidate
@@ -72,10 +88,6 @@
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/coimbatore/
   Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/pollachi
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/pollachi/
-  Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tiruppur
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tiruppur/
@@ -83,6 +95,14 @@
 /karnataka/bengaluru
   Cache-Control: public, max-age=0, must-revalidate
 /karnataka/bengaluru/
+  Cache-Control: public, max-age=0, must-revalidate
+/about-us
+  Cache-Control: public, max-age=0, must-revalidate
+/about-us/
+  Cache-Control: public, max-age=0, must-revalidate
+/cost-guide
+  Cache-Control: public, max-age=0, must-revalidate
+/cost-guide/
   Cache-Control: public, max-age=0, must-revalidate
 /privacy
   Cache-Control: public, max-age=0, must-revalidate
