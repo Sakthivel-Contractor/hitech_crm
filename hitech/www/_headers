@@ -4,6 +4,26 @@
   Cache-Control: public, max-age=0, must-revalidate
 /contact/
   Cache-Control: public, max-age=0, must-revalidate
+/services/open-well-digging
+  Cache-Control: public, max-age=0, must-revalidate
+/services/open-well-digging/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-deepening
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-deepening/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-ring-wall-construction
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-ring-wall-construction/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-desilting
+  Cache-Control: public, max-age=0, must-revalidate
+/services/well-desilting/
+  Cache-Control: public, max-age=0, must-revalidate
+/services/water-point-survey
+  Cache-Control: public, max-age=0, must-revalidate
+/services/water-point-survey/
+  Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/salem
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/salem/
