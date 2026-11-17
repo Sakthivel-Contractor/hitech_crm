@@ -104,6 +104,14 @@
   Cache-Control: public, max-age=0, must-revalidate
 /cost-guide/
   Cache-Control: public, max-age=0, must-revalidate
+/service-areas
+  Cache-Control: public, max-age=0, must-revalidate
+/service-areas/
+  Cache-Control: public, max-age=0, must-revalidate
+/gallery
+  Cache-Control: public, max-age=0, must-revalidate
+/gallery/
+  Cache-Control: public, max-age=0, must-revalidate
 /privacy
   Cache-Control: public, max-age=0, must-revalidate
 /privacy/

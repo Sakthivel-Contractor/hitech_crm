@@ -26,6 +26,8 @@ class TestWebsiteSecurityHeaders(unittest.TestCase):
 			"/services/well-deepening",
 			"/about-us",
 			"/cost-guide",
+			"/gallery",
+			"/service-areas",
 		]:
 			with self.subTest(path=path):
 				headers = run(path)

@@ -12,10 +12,10 @@ so Desk, the CRM app and the API keep their own behaviour:
 
 import re
 
-# "/", "/contact", "/privacy", "/about-us", "/cost-guide", "/services/<slug>",
+# "/", "/contact", "/privacy", "/about-us", "/cost-guide", "/gallery", "/service-areas", "/services/<slug>",
 # "/<state>/<district>", with or without a trailing slash.
 WEBSITE_PATH = re.compile(
-	r"^/(?:|contact|privacy|about-us|cost-guide|services/[a-z0-9-]+|(?:tamil-nadu|karnataka)/[a-z0-9-]+)/?$"
+	r"^/(?:|contact|privacy|about-us|cost-guide|gallery|service-areas|services/[a-z0-9-]+|(?:tamil-nadu|karnataka)/[a-z0-9-]+)/?$"
 )
 
 PERMISSIONS_POLICY = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
