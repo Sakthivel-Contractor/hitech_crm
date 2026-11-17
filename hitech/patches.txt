@@ -8,3 +8,4 @@
 [post_fixture_sync]
 # Patches added in this section will be executed after fixtures and customizations
 # (Custom Field, Property Setter, etc) are synced
+hitech.patches.v1.set_facebook_lead_work_type
