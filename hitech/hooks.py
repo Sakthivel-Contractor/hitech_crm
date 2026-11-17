@@ -81,6 +81,9 @@ home_page = "index"
 # links, e.g. shared WhatsApp previews, working with a permanent redirect.
 website_redirects = [
 	{"source": r"/optimized/(.+)", "target": r"/assets/hitech/vue/optimized/\1"},
+	# Merged district pages: Pollachi is in Coimbatore district, Rajapalayam in Virudhunagar.
+	{"source": "/tamil-nadu/pollachi", "target": "/tamil-nadu/coimbatore"},
+	{"source": "/tamil-nadu/rajapalayam", "target": "/tamil-nadu/virudhunagar"},
 ]
 
 # website user home page (by Role)

@@ -52,10 +52,6 @@
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/virudhunagar/
   Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/rajapalayam
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/rajapalayam/
-  Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tenkasi
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tenkasi/
@@ -91,10 +87,6 @@
 /tamil-nadu/coimbatore
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/coimbatore/
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/pollachi
-  Cache-Control: public, max-age=0, must-revalidate
-/tamil-nadu/pollachi/
   Cache-Control: public, max-age=0, must-revalidate
 /tamil-nadu/tiruppur
   Cache-Control: public, max-age=0, must-revalidate
