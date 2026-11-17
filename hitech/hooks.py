@@ -208,6 +208,8 @@ doc_events = {
 		# Fires after a new CRM Lead document is saved to the database for the
 		# first time. Sends an FCM push notification to all registered devices.
 		"after_insert": "hitech.api.notify_new_lead",
+		# Facebook leads: translate the Tamil work-type answer into the Work Type dropdown.
+		"before_insert": "hitech.facebook_leads.set_work_type_from_facebook",
 	}
 }
 
