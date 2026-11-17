@@ -76,6 +76,13 @@ home_page = "index"
 # The Vue site's public routes are pre-rendered under www/. Let Frappe return
 # its normal 404 for unknown paths instead of serving the homepage as HTTP 200.
 
+# Optimised photos moved from www/optimized/ (sent with no-store) to the app's
+# public/vue/optimized/ (served from /assets/ with a one-year cache). Keep old
+# links, e.g. shared WhatsApp previews, working with a permanent redirect.
+website_redirects = [
+	{"source": r"/optimized/(.+)", "target": r"/assets/hitech/vue/optimized/\1"},
+]
+
 # website user home page (by Role)
 # role_home_page = {
 # 	"Role": "home_page"
@@ -261,7 +268,7 @@ doc_events = {
 # Request Events
 # ----------------
 # before_request = ["hitech.utils.before_request"]
-# after_request = ["hitech.utils.after_request"]
+after_request = ["hitech.http_headers.add_website_security_headers"]
 
 # Job Events
 # ----------
