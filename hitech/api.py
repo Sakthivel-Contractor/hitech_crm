@@ -1,9 +1,12 @@
-import datetime
 # Copyright (c) 2026, Hitech and contributors
 # For license information, please see license.txt
 
+import datetime
+import re
+
 import frappe
 from frappe import _
+from frappe.rate_limiter import rate_limit
 
 # ---------------------------------------------------------------------------
 # Firebase helpers
@@ -42,6 +45,8 @@ def register_device(token: str, platform: str, device_name: str) -> dict:
 	user = frappe.session.user
 	if not user or user == "Guest":
 		frappe.throw(_("Authentication required"), frappe.AuthenticationError)
+	if not frappe.has_permission("CRM Lead", ptype="read", user=user):
+		frappe.throw(_("CRM Lead access required"), frappe.PermissionError)
 
 	token = (token or "").strip()
 	platform = (platform or "android").strip()
@@ -135,10 +140,22 @@ def notify_new_lead(doc, method=None) -> None:
 	try:
 		from firebase_admin import messaging
 
-		# Collect all registered FCM tokens
-		tokens: list[str] = frappe.db.get_all(
-			"HiTech Device Token", pluck="token"
+		# A registered device may outlive the user's CRM permissions. Check
+		# access to this lead before including its token in the notification.
+		registrations = frappe.db.get_all(
+			"HiTech Device Token", fields=["token", "user"]
 		)
+		access_by_user: dict[str, bool] = {}
+		tokens: list[str] = []
+		for registration in registrations:
+			user = registration.user
+			if user not in access_by_user:
+				access_by_user[user] = bool(
+					user != "Guest"
+					and frappe.has_permission("CRM Lead", ptype="read", doc=doc, user=user)
+				)
+			if access_by_user[user]:
+				tokens.append(registration.token)
 
 		if not tokens:
 			frappe.logger().info("[FCM] notify_new_lead: no registered device tokens, skipping.")
@@ -225,7 +242,8 @@ def get_website_csrf_token() -> str:
 	return frappe.sessions.get_csrf_token()
 
 
-@frappe.whitelist(allow_guest=True)
+@frappe.whitelist(allow_guest=True, methods=["POST"])
+@rate_limit(limit=10, seconds=3600, methods=["POST"])
 def create_website_lead(
 	name: str,
 	phone: str,
@@ -237,13 +255,17 @@ def create_website_lead(
 	Accessible to Guests (public website visitors).
 	Automatically triggers notify_new_lead via CRM Lead -> after_insert.
 	"""
-	if not name or not phone:
-		frappe.throw(_("Name and Phone are required"), frappe.ValidationError)
-
-	name = name.strip()
-	phone = phone.strip()
-	district = district.strip() if district else ""
-	message = message.strip() if message else ""
+	name = (name or "").strip()
+	phone = (phone or "").strip()
+	district = (district or "").strip()
+	work_type = (work_type or "").strip()
+	message = (message or "").strip()
+	if not name or len(name) > 120:
+		frappe.throw(_("Enter a name of up to 120 characters"), frappe.ValidationError)
+	if not re.fullmatch(r"[6-9]\d{9}", phone):
+		frappe.throw(_("Enter a valid 10-digit mobile number"), frappe.ValidationError)
+	if len(district) > 120 or len(message) > 1000:
+		frappe.throw(_("District or message is too long"), frappe.ValidationError)
 
 	# Check for potential duplicates within the last 10 minutes to prevent double-click
 	recent = frappe.db.get_value(
@@ -271,7 +293,9 @@ def create_website_lead(
 		'old well cleaning & desilting': 'Desilting',
 		'water point survey': 'Water Survey',
 	}
-	clean_work_type = WORK_TYPE_MAP.get(work_type.lower().strip(), work_type if work_type else 'New Well')
+	clean_work_type = WORK_TYPE_MAP.get(work_type.lower(), work_type or "New Well")
+	if clean_work_type not in {"New Well", "Well Deepening", "Wall Construction", "Desilting", "Water Survey"}:
+		frappe.throw(_("Invalid work type"), frappe.ValidationError)
 
 	lead = frappe.get_doc(
 		{
